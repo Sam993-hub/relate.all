@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RelateAll – All Types of Relationships, One Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+    .btn {
+      padding: 0.8rem 1.6rem;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+    .btn:hover {
+      background-color: #ff3e67;
+    }
+    .categories {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .tag {
+      background: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .tag:hover {
+      background: #ffe1ea;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #ffffffcc;
+      padding: 0.4rem 0.8rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-toggle" onclick="toggleLang()">हिन्दी</div>
+
+  <h1 id="title">Find Love. Your Way.</h1>
+  <p id="desc">From Arranged Marriages to Flirtationships, RelateAll helps you explore every type of connection that fits your vibe. One platform. Infinite possibilities.</p>
+
+  <div class="categories">
+    <div class="tag">Arranged Marriage</div>
+    <div class="tag">Live-in</div>
+    <div class="tag">Dating</div>
+    <div class="tag">Casual</div>
+    <div class="tag">Situationship</div>
+    <div class="tag">Work Romance</div>
+    <div class="tag">Living Apart Together</div>
+    <div class="tag">Benching</div>
+    <div class="tag">Flirtationship</div>
+    <div class="tag">Groundhogging</div>
+    <div class="tag">Cushioning</div>
+    <div class="tag">Crush</div>
+    <div class="tag">Long-term</div>
+    <div class="tag">Speed Dating</div>
+    <div class="tag">Blind Date</div>
+    <div class="tag">Friend Setup</div>
+    <div class="tag">Group Date</div>
+  </div>
+
+  <button class="btn" onclick="enterApp()">Enter App</button>
+
+  <script>
+    const langText = {
+      hi: {
+        title: "अपना प्यार ढूंढो, अपने तरीके से",
+        desc: "अरेंज्ड मैरिज से लेकर फ्लर्ट तक, RelateAll हर तरह के रिश्ते को एक्सप्लोर करने का एक ही प्लेटफॉर्म है।",
+        btn: "ऐप खोलें",
+        lang: "English"
+      },
+      en: {
+        title: "Find Love. Your Way.",
+        desc: "From Arranged Marriages to Flirtationships, RelateAll helps you explore every type of connection that fits your vibe. One platform. Infinite possibilities.",
+        btn: "Enter App",
+        lang: "हिन्दी"
+      }
+    };
+
+    let currentLang = 'en';
+
+    function toggleLang() {
+      currentLang = currentLang === 'en' ? 'hi' : 'en';
+      const l = langText[currentLang];
+      document.getElementById('title').innerText = l.title;
+      document.getElementById('desc').innerText = l.desc;
+      document.querySelector('.btn').innerText = l.btn;
+      document.querySelector('.lang-toggle').innerText = l.lang;
+    }
+
+    function enterApp() {
+      window.location.href = "https://your-firebase-app.web.app";
+    }
+  </script>
+</body>
+</html>
