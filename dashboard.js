@@ -1,0 +1,1 @@
+console.log('Load matches from Firestore')

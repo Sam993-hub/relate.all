@@ -1,0 +1,1 @@
+console.log('Profile logic to connect to Firebase')
