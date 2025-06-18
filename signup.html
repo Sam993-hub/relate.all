@@ -41,33 +41,32 @@
   </style>
 </head>
 <body>
-  <form action="dashboard.html" method="get">
+  <form action="profile.html" method="get" enctype="multipart/form-data">
     <h2>📝 Create Your WeLation Profile</h2>
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="number" name="age" placeholder="Your Age" required />
     <input type="email" name="email" placeholder="Email Address" required />
+    <input type="file" name="profilePic" accept="image/*" />
     <select name="relationshipType" required>
       <option value="">Select Relationship Type</option>
       <option>Arranged Marriage</option>
       <option>Live-in Relationship</option>
-      <option>Dating (Traditional)</option>
       <option>Casual Relationship</option>
       <option>Situationship</option>
-      <option>Workplace Romance</option>
       <option>Living Apart Together</option>
       <option>Benching</option>
-      <option>Flirtationship</option>
       <option>Groundhogging</option>
       <option>Cushioning</option>
-      <option>Current Relationship</option>
       <option>Crush Zone</option>
       <option>Long-Term Dating</option>
-      <option>Speed Dating</option>
       <option>Blind Dating</option>
       <option>Friend Setup</option>
       <option>Group Dating</option>
+      <option>Part-Time Girlfriend</option>
+      <option>Part-Time Boyfriend</option>
+      <option>Travel Partner</option>
     </select>
-    <button type="submit">💖 Let's Go</button>
+    <button type="submit">💖 Let’s Go</button>
   </form>
 </body>
 </html>

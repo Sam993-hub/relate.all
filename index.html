@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WeLation ❤️ Your Kind of Love</title>
+  <title>WeLation ❤️ Every Shade of Love</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #fdfbfb, #ebedee);
       margin: 0;
       padding: 0;
-      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
+      overflow-x: hidden;
     }
     .container {
       text-align: center;
       padding: 30px;
-      max-width: 850px;
+      max-width: 960px;
     }
     h1 {
       font-size: 3rem;
       color: #ff4081;
-      margin-bottom: 10px;
     }
     p {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
+      font-size: 1.2rem;
     }
     .cta {
       display: inline-block;
@@ -40,23 +38,28 @@
       border: none;
       border-radius: 30px;
       text-decoration: none;
-      margin-bottom: 30px;
+      margin: 20px 0;
       box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
-      transition: background 0.3s ease;
     }
-    .cta:hover {
-      background-color: #e91e63;
-    }
-    .relationship-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    .bubble-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 15px;
-      font-size: 1rem;
-      margin-top: 30px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      margin: 30px auto;
+    }
+    .bubble {
+      padding: 12px 18px;
+      background-color: #ffe4ec;
+      color: #e60073;
+      font-weight: bold;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      animation: pop 2s infinite ease-in-out alternate;
+    }
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
     }
     .footer {
       margin-top: 40px;
@@ -67,28 +70,26 @@
 <body>
   <div class="container">
     <h1>Welcome to WeLation 💖</h1>
-    <p>Your space to explore every shade of love, laughter, & connection 🌈✨</p>
+    <p>Discover your kind of relationship, your way 🌈</p>
     <a class="cta" href="signup.html">💘 Sign Up to Start Matching</a>
 
-    <div class="relationship-list">
-      <div>💍 Arranged Marriage</div>
-      <div>🏡 Live-in Relationship</div>
-      <div>💑 Dating (Traditional)</div>
-      <div>🎉 Casual Relationship</div>
-      <div>🤔 Situationship</div>
-      <div>💼 Workplace Romance</div>
-      <div>🚪 Living Apart Together</div>
-      <div>🕒 Benching</div>
-      <div>😉 Flirtationship</div>
-      <div>🔁 Groundhogging</div>
-      <div>🛡️ Cushioning</div>
-      <div>💬 Current Relationship</div>
-      <div>💘 Crush Zone</div>
-      <div>⏳ Long-Term Dating</div>
-      <div>⚡ Speed Dating</div>
-      <div>🎭 Blind Dating</div>
-      <div>🧑‍🤝‍🧑 Friend Setup</div>
-      <div>👥 Group Dating</div>
+    <div class="bubble-container">
+      <div class="bubble">💍 Arranged Marriage</div>
+      <div class="bubble">🏡 Live-in Relationship</div>
+      <div class="bubble">🎉 Casual Relationship</div>
+      <div class="bubble">🤔 Situationship</div>
+      <div class="bubble">🚪 Living Apart Together</div>
+      <div class="bubble">🕒 Benching</div>
+      <div class="bubble">🔁 Groundhogging</div>
+      <div class="bubble">🛡️ Cushioning</div>
+      <div class="bubble">💘 Crush Zone</div>
+      <div class="bubble">⏳ Long-Term Dating</div>
+      <div class="bubble">🎭 Blind Dating</div>
+      <div class="bubble">🧑‍🤝‍🧑 Friend Setup</div>
+      <div class="bubble">👥 Group Dating</div>
+      <div class="bubble">💃 Part-Time Girlfriend</div>
+      <div class="bubble">🕺 Part-Time Boyfriend</div>
+      <div class="bubble">✈️ Travel Partner</div>
     </div>
 
     <div class="footer">Made with ❤️ in India | Hindi/English Supported</div>
