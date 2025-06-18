@@ -1,72 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Sign Up - WeLation</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fdf6f9;
-      padding: 40px;
-      color: #333;
-    }
-    form {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    input, select {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      background-color: #ff4081;
-      color: white;
-      font-size: 1rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #e91e63;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="profile.html" method="get" enctype="multipart/form-data">
-    <h2>📝 Create Your WeLation Profile</h2>
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="number" name="age" placeholder="Your Age" required />
-    <input type="email" name="email" placeholder="Email Address" required />
-    <input type="file" name="profilePic" accept="image/*" />
-    <select name="relationshipType" required>
-      <option value="">Select Relationship Type</option>
-      <option>Arranged Marriage</option>
-      <option>Live-in Relationship</option>
-      <option>Casual Relationship</option>
-      <option>Situationship</option>
-      <option>Living Apart Together</option>
-      <option>Benching</option>
-      <option>Groundhogging</option>
-      <option>Cushioning</option>
-      <option>Crush Zone</option>
-      <option>Long-Term Dating</option>
-      <option>Blind Dating</option>
-      <option>Friend Setup</option>
-      <option>Group Dating</option>
-      <option>Part-Time Girlfriend</option>
-      <option>Part-Time Boyfriend</option>
-      <option>Travel Partner</option>
-    </select>
-    <button type="submit">💖 Let’s Go</button>
-  </form>
+  <div class="signup-container">
+    <h1>Sign Up to WeLation ❤️</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="number" placeholder="Age" required><br>
+      <select required>
+        <option value="">Select Relationship Type</option>
+        <option>Arranged Marriage</option>
+        <option>Live-in Relationship</option>
+        <option>Casual Relationship</option>
+        <option>Situationship</option>
+        <option>Group Dating</option>
+        <option>Part-time Girlfriend</option>
+        <option>Part-time Boyfriend</option>
+        <option>Travel Partner</option>
+      </select><br>
+      <button type="submit">Continue</button>
+    </form>
+    <a href="index.html">← Back to Home</a>
+  </div>
 </body>
 </html>
