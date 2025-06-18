@@ -1,35 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign Up - WeLation</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf6f9;
+      padding: 40px;
+      color: #333;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff4081;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Create Your WeLation Profile</h2>
-    <form id="signupForm">
-      <input type="text" placeholder="Name" required><br><br>
-      <input type="number" placeholder="Age" required><br><br>
-      <input type="email" placeholder="Email" required><br><br>
-      <select required>
-        <option value="">Select Relationship Type</option>
-        <option>Arranged Marriage</option>
-        <option>Dating</option>
-        <option>Live-in</option>
-        <option>Situationship</option>
-      </select><br><br>
-      <button type="submit" class="cta">Submit</button>
-    </form>
-    <div class="footer">Back to <a href="index.html">Home</a></div>
-  </div>
-  <script>
-    document.getElementById("signupForm").addEventListener("submit", function(e){
-      e.preventDefault();
-      alert("✅ Profile submitted! (Dummy flow)");
-    });
-  </script>
+  <form action="dashboard.html" method="get">
+    <h2>📝 Create Your WeLation Profile</h2>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="number" name="age" placeholder="Your Age" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <select name="relationshipType" required>
+      <option value="">Select Relationship Type</option>
+      <option>Arranged Marriage</option>
+      <option>Live-in Relationship</option>
+      <option>Dating (Traditional)</option>
+      <option>Casual Relationship</option>
+      <option>Situationship</option>
+      <option>Workplace Romance</option>
+      <option>Living Apart Together</option>
+      <option>Benching</option>
+      <option>Flirtationship</option>
+      <option>Groundhogging</option>
+      <option>Cushioning</option>
+      <option>Current Relationship</option>
+      <option>Crush Zone</option>
+      <option>Long-Term Dating</option>
+      <option>Speed Dating</option>
+      <option>Blind Dating</option>
+      <option>Friend Setup</option>
+      <option>Group Dating</option>
+    </select>
+    <button type="submit">💖 Let's Go</button>
+  </form>
 </body>
 </html>
