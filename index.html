@@ -1,104 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>WeLation – One Platform. Every Kind of Relationship.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: url('welation-landing-page.png') no-repeat center center fixed;
-            background-size: cover;
-            position: relative;
-        }
-
-        .tagline {
-            position: absolute;
-            top: 5%;
-            width: 100%;
-            text-align: center;
-            font-size: 2rem;
-            color: #fff;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .bubble {
-            position: absolute;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background-color: rgba(255, 105, 180, 0.8);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .bubble:hover {
-            transform: scale(1.2);
-            z-index: 2;
-        }
-
-        .tooltip {
-            display: none;
-            position: absolute;
-            background: #fff;
-            color: #333;
-            padding: 10px;
-            border-radius: 8px;
-            width: 180px;
-            font-size: 0.85rem;
-            text-align: left;
-            z-index: 3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeLation ❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="tagline">❤️ One Platform. Every Kind of Relationship.</div>
+  <div class="landing-container">
+    <img src="assets/homepage.png" alt="WeLation background" class="background-img" />
 
-    <div class="bubble" style="top: 20%; left: 10%;" data-tooltip="Part-Time Girlfriend: For special moments, not full-time.">
-        💖
+    <div class="overlay-content">
+      <h1 class="tagline">One Platform. Every Kind of Relationship 💖</h1>
+      <div class="signup-box">
+        <input type="text" placeholder="Enter your email" />
+        <button onclick="alert('Signup logic coming soon!')">Sign Up</button>
+      </div>
+      <div class="bubble-container" id="relationship-bubbles"></div>
     </div>
-    <div class="bubble" style="top: 40%; left: 30%;" data-tooltip="Travel Partner: Someone to explore the world with.">
-        ✈️
-    </div>
-    <div class="bubble" style="top: 60%; left: 15%;" data-tooltip="Arranged Marriage: Match via family, meet your fate.">
-        💍
-    </div>
-    <div class="bubble" style="top: 35%; left: 55%;" data-tooltip="Situationship: It's complicated, but thrilling.">
-        🌀
-    </div>
-    <div class="bubble" style="top: 70%; left: 70%;" data-tooltip="Crush Zone: Light feelings, big heartbeats.">
-        💘
-    </div>
-    <div class="tooltip" id="tooltip"></div>
 
-    <script>
-        const bubbles = document.querySelectorAll('.bubble');
-        const tooltip = document.getElementById('tooltip');
+    <div id="tooltip" class="tooltip"></div>
+  </div>
 
-        bubbles.forEach(bubble => {
-            bubble.addEventListener('mouseenter', (e) => {
-                tooltip.innerText = bubble.dataset.tooltip;
-                tooltip.style.display = 'block';
-                tooltip.style.top = bubble.offsetTop - 10 + 'px';
-                tooltip.style.left = bubble.offsetLeft + 130 + 'px';
-            });
-            bubble.addEventListener('mouseleave', () => {
-                tooltip.style.display = 'none';
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
