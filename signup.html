@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - WeLation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Create Your WeLation Profile</h2>
+    <form id="signupForm">
+      <input type="text" placeholder="Name" required><br><br>
+      <input type="number" placeholder="Age" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <select required>
+        <option value="">Select Relationship Type</option>
+        <option>Arranged Marriage</option>
+        <option>Dating</option>
+        <option>Live-in</option>
+        <option>Situationship</option>
+      </select><br><br>
+      <button type="submit" class="cta">Submit</button>
+    </form>
+    <div class="footer">Back to <a href="index.html">Home</a></div>
+  </div>
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("✅ Profile submitted! (Dummy flow)");
+    });
+  </script>
+</body>
+</html>
