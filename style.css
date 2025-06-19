@@ -30,7 +30,10 @@ body::before {
 
 .landing {
   padding: 60px 20px;
-  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b), url('https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?fit=crop&w=1350&q=80');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
   color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
   min-height: 100vh;
