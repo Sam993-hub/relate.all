@@ -1,29 +1,72 @@
 
 body {
-  font-family: Arial, sans-serif;
-  background: #fff0f6;
-  color: #333;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+  color: #333;
+  text-align: center;
 }
+
 .landing {
-  padding: 50px;
+  padding: 60px 20px;
+  background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
+
+.landing h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.landing p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
 .btn-signup {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 28px;
   background: #ff4da6;
   color: white;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 30px;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
 }
+
+.btn-signup:hover {
+  background: #e9448d;
+}
+
 .signup-container {
-  padding: 50px;
+  padding: 60px 20px;
+  background-color: #fff0f6;
 }
+
+.signup-container h1 {
+  color: #ff3385;
+}
+
 input, select, button {
   margin: 10px;
-  padding: 10px;
+  padding: 12px;
   width: 80%;
   max-width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background: #ff4da6;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e9448d;
 }
