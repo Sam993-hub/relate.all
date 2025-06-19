@@ -3,35 +3,62 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ef32d9 0%, #89fffd 100%);
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
   color: #fff;
   text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "💜 💖 💕 💘 💓 💞 💗 💝";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  font-size: 5rem;
+  animation: floatHearts 20s linear infinite;
+  opacity: 0.1;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+@keyframes floatHearts {
+  0% { transform: translateX(-50%) translateY(0); opacity: 0.1; }
+  50% { opacity: 0.2; }
+  100% { transform: translateX(-50%) translateY(100vh); opacity: 0; }
 }
 
 .landing {
   padding: 60px 20px;
-  background: url('https://images.unsplash.com/photo-1505916341508-3d5c20713334?fit=crop&w=1350&q=80') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+  min-height: 100vh;
 }
 
-h1, p {
-  color: #fff;
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
 .btn-signup {
   display: inline-block;
   padding: 12px 28px;
-  background: #e100ff;
+  background: #ff4da6;
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: background 0.3s ease;
 }
 
 .btn-signup:hover {
-  background: #a100cc;
+  background: #ff007f;
 }
 
 .relationship-bubbles {
@@ -40,20 +67,27 @@ h1, p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 .bubble {
-  background: #ff4da6;
+  background: #ff69b4;
   color: white;
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 10px #ff99cc;
 }
 
 .bubble:hover {
-  background: #ff0080;
+  background: #ff33aa;
   transform: scale(1.1);
 }
 
@@ -66,4 +100,5 @@ h1, p {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  color: #fff;
 }
