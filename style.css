@@ -3,70 +3,67 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
-  color: #333;
+  background: linear-gradient(135deg, #ef32d9 0%, #89fffd 100%);
+  color: #fff;
   text-align: center;
 }
 
 .landing {
   padding: 60px 20px;
-  background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?fit=crop&w=1350&q=80') no-repeat center center;
+  background: url('https://images.unsplash.com/photo-1505916341508-3d5c20713334?fit=crop&w=1350&q=80') no-repeat center center;
   background-size: cover;
-  color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
 
-.landing h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-}
-
-.landing p {
-  font-size: 1.5em;
-  margin-bottom: 2em;
+h1, p {
+  color: #fff;
 }
 
 .btn-signup {
   display: inline-block;
   padding: 12px 28px;
-  background: #ff4da6;
+  background: #e100ff;
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   transition: background 0.3s ease;
 }
 
 .btn-signup:hover {
-  background: #e9448d;
+  background: #a100cc;
 }
 
-.signup-container {
-  padding: 60px 20px;
-  background-color: #fff0f6;
+.relationship-bubbles {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
-.signup-container h1 {
-  color: #ff3385;
-}
-
-input, select, button {
-  margin: 10px;
-  padding: 12px;
-  width: 80%;
-  max-width: 300px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-}
-
-button {
+.bubble {
   background: #ff4da6;
   color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
-button:hover {
-  background: #e9448d;
+.bubble:hover {
+  background: #ff0080;
+  transform: scale(1.1);
+}
+
+.bubble-description {
+  margin-top: 20px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
